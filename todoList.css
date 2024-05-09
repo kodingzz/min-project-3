@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: violet;
+    background: linear-gradient(135deg,#153677,#4e085f);   
+    /* 두 개 이상의 색상 사이의 점진적인 전환으로 구성된 이미지를 만듭니다. */
+}
+
+
+#todoListBox{
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 500px;   
+    width: 100%;
+   background-color: #fff;
+}
+#todoListForm {
+    margin-bottom: 1rem;
+
+}
+#todoListForm h1{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+   
+
+}
+#todoListForm h1 img{
+    width: 30px;
+    margin-left: 10px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    
+}
+ .todoListInput{
+    flex: 1;      /*100%차지 */
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+}
+.todoListAddBtn{
+    padding: 0.8rem 2.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #ff5945;
+    color:#fff;
+
+} 
+
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+
+}
+li{
+    list-style-type: none;
+    padding: 0.6rem 0;
+}
+/* ul li input[type="checkbox"]{
+   width: 23px;
+   height: 23px;
+   margin-right: 10px;
+   appearance: none;
+   cursor: pointer;
+   border-radius: 50%;
+   border: 1px solid #999;
+   vertical-align: middle;
+}
+input[type="checkbox"]:checked {
+    background: coral;
+    border: none;
+ 
+    
+  } */
+
+input[type="checkbox"] {
+
+    display:none;
+
+}
+input[type="checkbox"] + label span {
+
+
+    display: inline-block;
+
+
+    width: 24px;
+
+
+    height: 24px;
+
+
+    margin: 0 10px 0 0;
+
+
+    vertical-align: middle;
+
+
+    background: url(https://t1.daumcdn.net/cfile/tistory/995781445B6C0C3A0B) left top no-repeat;
+
+
+    cursor: pointer;
+
+
+    background-size: cover;
+
+
+}
+input[type="checkbox"]:checked + label span {
+
+
+    background:url(https://t1.daumcdn.net/cfile/tistory/995781445B6C0C3A0B)  -26px top no-repeat;
+
+     background-size: cover;
+
+
+}
+
+li span{
+    cursor: pointer;
+   
+}
+li button{
+    float: right;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: bold;
+    width : 30px;
+    height : 30px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+   
+   
+}
+li button:hover{
+    background-color: #e2e2e2;
+}
+
+
+.complete{
+    text-decoration: line-through;
+    cursor: pointer;
+    color: rgb(155, 155, 155);
+    
+}
+
